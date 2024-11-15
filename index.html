@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'Ryujin Attack';
+            src: url('font/RyujinAttack.otf') format('opentype');
+        }
+
+        .tour {
+            border: 1px solid #ddd;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: white;
+        }
+
+        .tour:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tour-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .tour img {
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .tour h3 {
+            margin-bottom: 10px;
+        }
+
+        .tour p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Pocky</h1>
+            <img src="img/logo.png" alt="Logo de Japón" style="width: 150px; height: auto;">
+            <h1>Travel</h1>
+        </div>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                    <li><a href="#events">Eventos</a></li>
+                    <li><a href="#offers">Ofertas</a></li>
+                    <li><a href="#booking">Reservas</a></li>
+                    <li><a href="#contact">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" style="text-align: center; padding: 20px;">
+            <h1 style="font-size: 48px; font-family: 'Ryujin Attack', sans-serif; margin-bottom: 10px; color: #333;">Inicio</h1>
+            <p style="font-size: 20px; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #333;">
+                ¿Listo para explorar Japón como nunca antes? En <strong>Pocky Travel</strong>, te llevamos a un país donde los cerezos en flor, los templos milenarios y la energía vibrante de ciudades como Tokio se unen para crear una experiencia inolvidable.
+            </p>
+        </section>
+        <section id="about" style="text-align: center; padding: 20px;">
+            <h1 style="font-size: 48px; font-family: 'Ryujin Attack', sans-serif; margin-bottom: 10px; color: #333;">Sobre Nosotros</h1>
+            <p style="font-size: 20px; line-height: 1.6; max-width: 800px; margin: 0 auto; color: #333;">
+                En <strong>Pocky Travel</strong>, estamos comprometidos en hacer realidad tus sueños de viajar a Japón. Desde 2010, hemos trabajado para ofrecer experiencias únicas, con planes flexibles, pagos en cuotas y guías expertos que se encargan de todo por ti.
+            </p>
+        </section>
+        <section id="tours">
+            <div style="background-color: red; padding: 20px; text-align: center;">
+                <h2 style="font-size: 36px; color: white;">Tours</h2>
+            </div>
+            <div class="tours-container">
+                <div class="tour">
+                    <div class="tour-content">
+                        <img src="img/tokyo.jpg" alt="Tokio">
+                        <div style="width: 30%; text-align: center;">
+                            <h3>Tokio</h3>
+                            <p>La ciudad que nunca duerme, donde la tradición y la modernidad conviven en perfecta armonía. Desde los neones de Shibuya hasta los templos de Asakusa, Tokio te espera con sorpresas en cada esquina.</p>
+                        </div>
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/T25NU1IOSsk" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="tour-content">
+                        <img src="img/kyoto.jpg" alt="Kioto">
+                        <div style="width: 30%; text-align: center;">
+                            <h3>Kioto</h3>
+                            <p>El corazón espiritual de Japón, con templos que cuentan historias milenarias y paisajes que parecen sacados de un sueño. Kioto es un viaje en el tiempo al Japón de los samuráis y las geishas.</p>
+                        </div>
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/oCFIv_mw_Z8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="tour">
+                    <div class="tour-content">
+                        <img src="img/hokkaido.jpg" alt="Hokkaido">
+                        <div style="width: 30%; text-align: center;">
+                            <h3>Hokkaido</h3>
+                            <p>Un paraíso natural para los amantes de los paisajes impresionantes. Desde los campos de lavanda en verano hasta las nieves eternas en invierno, Hokkaido es un espectáculo para los sentidos.</p>
+                        </div>
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/F5GFLXMIxDM" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="events">
+            <div style="text-align: center;">
+                <h2>Eventos</h2>
+                <img src="img/a8.png" alt="Festivales de Japón" style="width: 300px; height: 300px; border-radius: 50%; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                <p>🌟 <strong>¡Vive los festivales más espectaculares de Japón!</strong> 🌟</p>
+                <p>Te llevamos a descubrir lo mejor de cada región con un toque especial. ¡No te los pierdas! 🎉✨</p>
+                <div style="text-align: left; max-width: 700px; margin: 0 auto;">
+                    <h3>🎎 Festivales en Tokio</h3>
+                    <ul>
+                        <li>🎏 Kanda Matsuri</li>
+                        <li>🎇 Sumida River Fireworks Festival</li>
+                        <li>🌸 Hanami Festival en Ueno</li>
+                        <li>🎤 Koenji Awa Odori</li>
+                        <li>🏮 Asakusa Samba Carnival</li>
+                    </ul>
+                    <h3>🎭 Festivales en Kioto</h3>
+                    <ul>
+                        <li>🎋 Gion Matsuri</li>
+                        <li>🔥 Daimonji Bonfire Festival</li>
+                        <li>🍁 Festival de Otoño en Arashiyama</li>
+                        <li>🐉 Kurama no Hi Matsuri</li>
+                        <li>⛩️ Aoi Matsuri</li>
+                    </ul>
+                    <h3>❄️ Festivales en Hokkaido</h3>
+                    <ul>
+                        <li>⛄ Sapporo Snow Festival</li>
+                        <li>🐟 Otaru Snow Light Path Festival</li>
+                        <li>🌾 Festival de la Cosecha en Furano</li>
+                        <li>🎶 Festival de Verano en Asahikawa</li>
+                        <li>🌼 Festival de Lavanda en Furano</li>
+                    </ul>
+                </div>
+                <p>🚌 <strong>¡Nosotros te llevamos!</strong> ¡Con transporte cómodo, guías expertos y momentos inolvidables, prepárate para disfrutar al máximo! 🥳💃</p>
+            </div>
+        </section>
+        <section id="offers">
+            <div style="text-align: center;">
+                <h2>Ofertas</h2>
+                <img src="img/a5.jpg" alt="Viaje a Japón Primavera 2025" style="max-width: 100%; height: auto; border-radius: 10px; margin: 20px 0;">
+                <p>🌸<strong>VIAJE A JAPÓN PRIMAVERA 2025</strong>🌸✈️🇯🇵</p>
+                <p>🗓️Del 26 de marzo al 5 de abril 2025</p>
+                <p>
+                    El tour de 10 noches en Japón sin incluir el boleto aéreo vale <strong>$3200 dólares</strong> por persona. 
+                    Visitan Tokyo, Monte Fuji, Osaka (<strong>Universal Studio, Súper Nintendo World</strong>), Kyoto y Nara. 
+                    Incluye:
+                </p>
+                <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                    <li>🏨 Hospedaje por 10 noches</li>
+                    <li>🍱🍙🍣 Alimentación: 3 comidas diarias</li>
+                    <li>🚅 Traslados (Shinkansen: tren bala)</li>
+                    <li>📝 Trámites de visa de turismo japonesa</li>
+                    <li>💁🏻‍♀ Guía en español</li>
+                </ul>
+                <p><strong>No incluye:</strong></p>
+                <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                    <li>✈️ Boleto aéreo</li>
+                    <li>🛡️ Seguro de viaje (obligatorio)</li>
+                    <li>🛍️ Gastos personales</li>
+                </ul>
+            </div>
+        </section>
+        <section id="booking">
+            <h2>Reservas</h2>
+            <form>
+                <label for="destination">Destino:</label>
+                <input type="text" id="destination" name="destination" placeholder="Ej. Tokio, Kioto">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date">
+                <label for="guests">Número de personas:</label>
+                <input type="number" id="guests" name="guests" min="1" placeholder="1">
+                <button type="submit">Reservar Ahora</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contáctanos</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu Nombre">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer style="background-color: #333; color: white; text-align: center; padding: 20px; margin-top: 40px;">
+        <p>Contáctanos y síguenos en nuestras redes sociales:</p>
+        <div style="font-size: 20px; margin: 10px 0;">
+            📞 <strong>Teléfono:</strong> +54 11 1234-5678<br>
+            📸 <strong>Instagram:</strong> <a href="#" style="color: #ff6e6e; text-decoration: none;">@PockyTravel</a><br>
+            👍 <strong>Facebook:</strong> <a href="#" style="color: #3b5998; text-decoration: none;">Pocky Travel</a><br>
+            🌐 <strong>Web:</strong> <a href="#" style="color: #1e90ff; text-decoration: none;">www.pockytravel.com</a>
+        </div>
+        <p style="margin-top: 15px;">&copy; 2024 Pocky Travel. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
