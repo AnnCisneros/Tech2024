@@ -164,3 +164,93 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
+
+/* Centrar las secciones de festivales */
+.slider-container {
+    perspective: 1000px; /* Da profundidad al carrusel */
+    margin: 0 auto;
+    max-width: 90%; /* Limita el ancho para centrar */
+}
+
+.card-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    padding: 20px;
+}
+
+/* Estilo 3D para las tarjetas */
+.card {
+    flex-shrink: 0;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    transform: rotateY(0deg);
+    transform-origin: center;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1) rotateY(10deg); /* Aumenta el tamaño y rota ligeramente */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Añadir profundidad al carrusel */
+.card-slider .card:nth-child(odd) {
+    transform: translateZ(-20px);
+}
+
+.card-slider .card:nth-child(even) {
+    transform: translateZ(20px);
+}
+
+.card-slider:hover .card {
+    transform: rotateY(0deg);
+}
+
+/* Botones interactivos */
+.more-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more-btn:hover {
+    background-color: #555;
+}
+
+.hidden-text {
+    display: none;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.card.expanded {
+    width: 350px;
+    transform: scale(1.2);
+}
+
+.card.expanded .hidden-text {
+    display: block;
+}
+
+/* Scrollbar personalizado para el carrusel */
+.card-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.card-slider::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
